@@ -1,21 +1,9 @@
-# iOS Project Structure (Lab 4)
+# Lab 4 (Manual Layout) - quick run
 
-Папки:
-- `App/` - жизненный цикл приложения
-- `Models/` - модели данных
-- `Views/` - кастомные UIView/ячейки
-- `ViewControllers/` - контроллеры экранов
-- `Resources/` - storyboard/xib/assets
-- `Supporting/` - вспомогательные файлы
+```bash
+cd task4/lab4_variant17/ios_project
+xcodegen generate
+open Lab4ManualLayout.xcodeproj
+```
 
-Для этой лабы:
-- `App/AppDelegate.swift`
-- `App/SceneDelegate.swift`
-- `ViewControllers/DoctorProfileViewController.swift`
-
-Как запустить в Xcode:
-1. Создать новый UIKit App проект.
-2. Заменить AppDelegate/SceneDelegate на файлы из `App/`.
-3. Добавить контроллер из `ViewControllers/`.
-4. Назначить его стартовым (через SceneDelegate или Storyboard).
-5. Выбрать Team/Bundle ID и нажать Run.
+В Xcode: Signing Team -> Simulator -> Cmd+R.
