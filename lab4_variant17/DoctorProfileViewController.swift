@@ -106,8 +106,8 @@ final class DoctorProfileViewController: UIViewController {
     private func fillContent() {
         fullNameLabel.text = "Anna Smirnova"
         specialityLabel.text = "Cardiologist"
-        qualificationLabel.text = "Top qualification category"
-        experienceLabel.text = "Work experience: 12 years"
-        aboutLabel.text = "Provides diagnosis and treatment of cardiovascular diseases, and consults on prevention and recovery after therapy."
+        qualificationLabel.text = "Top category"
+        experienceLabel.text = "12 years of experience"
+        aboutLabel.text = "Cardiovascular diagnosis and treatment."
     }
 }
