@@ -8,3 +8,14 @@
 - `control_questions.md` - ответы на контрольные вопросы.
 
 Экран использует `UIScrollView`, `UIStackView` и `Auto Layout` констрейнты, заданные программно.
+
+## Минимальный запуск в Xcode
+
+1. `File -> New -> Project -> iOS App (UIKit, Swift, Storyboard)`.
+2. Добавить в проект файлы:
+   - `DoctorProfileViewController.swift`
+   - `AppDelegate.swift`
+   - `SceneDelegate.swift`
+3. Удалить автосозданный `ViewController.swift`.
+4. В `Signing & Capabilities` выбрать `Team`.
+5. Запустить на симуляторе (`Cmd+R`).
