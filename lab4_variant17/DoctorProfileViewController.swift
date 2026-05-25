@@ -18,7 +18,7 @@ final class DoctorProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Профиль врача"
+        title = "Doctor Profile"
         view.backgroundColor = .systemBackground
 
         configureViews()
@@ -31,7 +31,7 @@ final class DoctorProfileViewController: UIViewController {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         rootStackView.translatesAutoresizingMaskIntoConstraints = false
         rootStackView.axis = .vertical
-        rootStackView.spacing = 16
+        rootStackView.spacing = 8
 
         photoImageView.translatesAutoresizingMaskIntoConstraints = false
         photoImageView.image = UIImage(systemName: "person.crop.circle.fill")
@@ -51,7 +51,7 @@ final class DoctorProfileViewController: UIViewController {
         experienceLabel.numberOfLines = 0
 
         aboutTitleLabel.font = .boldSystemFont(ofSize: 22)
-        aboutTitleLabel.text = "О враче"
+        aboutTitleLabel.text = "About doctor"
 
         aboutLabel.numberOfLines = 0
         aboutLabel.font = .systemFont(ofSize: 17)
@@ -62,10 +62,10 @@ final class DoctorProfileViewController: UIViewController {
         actionsStackView.distribution = .fillEqually
 
         appointmentButton.configuration = .filled()
-        appointmentButton.configuration?.title = "Записаться"
+        appointmentButton.configuration?.title = "Book appointment"
 
         favoriteButton.configuration = .bordered()
-        favoriteButton.configuration?.title = "В избранное"
+        favoriteButton.configuration?.title = "Add to favorites"
     }
 
     private func layoutViews() {
@@ -93,21 +93,21 @@ final class DoctorProfileViewController: UIViewController {
             contentView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
             contentView.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor),
 
-            rootStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
-            rootStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            rootStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-            rootStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
+            rootStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
+            rootStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
+            rootStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12),
+            rootStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
 
-            photoImageView.heightAnchor.constraint(equalToConstant: 160),
-            actionsStackView.heightAnchor.constraint(equalToConstant: 50)
+            photoImageView.heightAnchor.constraint(equalToConstant: 90),
+            actionsStackView.heightAnchor.constraint(equalToConstant: 44)
         ])
     }
 
     private func fillContent() {
-        fullNameLabel.text = "Анна Смирнова"
-        specialityLabel.text = "Кардиолог"
-        qualificationLabel.text = "Квалификация: высшая категория"
-        experienceLabel.text = "Опыт работы: 12 лет"
-        aboutLabel.text = "Проводит диагностику и лечение сердечно-сосудистых заболеваний, консультирует по профилактике и восстановлению после терапии."
+        fullNameLabel.text = "Anna Smirnova"
+        specialityLabel.text = "Cardiologist"
+        qualificationLabel.text = "Top qualification category"
+        experienceLabel.text = "Work experience: 12 years"
+        aboutLabel.text = "Provides diagnosis and treatment of cardiovascular diseases, and consults on prevention and recovery after therapy."
     }
 }
